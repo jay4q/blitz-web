@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  background-color: theme("colors.white") !important;
+  margin: 0;
+}
+
+#root {
+  @apply w-full h-screen max-h-screen;
+}
