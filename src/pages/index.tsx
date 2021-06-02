@@ -1,4 +1,4 @@
-import { FunctionComponent, Suspense, useEffect } from 'react'
+import { FunctionComponent, Suspense, useEffect, lazy } from 'react'
 import { Router, Route, Switch } from 'react-router-dom'
 import { history } from 'utils/history'
 import HomePage from './home'

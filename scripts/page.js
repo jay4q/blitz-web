@@ -80,7 +80,7 @@ try {
       prevAppFile
         .replace(
           /\/\/ !!! page/,
-          `// >>> page\n  { path: PATHS['${pageAlias}'], comp: lazy(() => import('../pages/${relativePath}')) },`
+          `// !!! page\n  { path: PATHS['${pageAlias}'], comp: lazy(() => import('../pages/${relativePath}')) },`
         )
     )
   }
