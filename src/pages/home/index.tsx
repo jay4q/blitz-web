@@ -34,7 +34,7 @@ const GAME_CONFIG: Types.Core.GameConfig = {
 /**
  * 首页
  */
-export class HomePage extends Component {
+export default class HomePage extends Component {
   getImageColors = async () => {
     const res = await Vibrant
       .from(IMAGE)
