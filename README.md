@@ -11,3 +11,7 @@
 ## 注意事项
 
 + 因为单入口且使用静态文件托管，因此必须使用 **哈希路由**
+
+### 关于依赖
+
++ `node-vibrant` 目前锁定在 3.1.6 版本，待 [官方](https://github.com/Vibrant-Colors/node-vibrant) 升级完成后再升级
