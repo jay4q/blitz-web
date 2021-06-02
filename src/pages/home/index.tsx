@@ -2,6 +2,8 @@ import { AUTO, Game, Scene, Types } from 'phaser'
 import { Component } from 'react'
 import Vibrant from 'node-vibrant'
 import { BlurImage } from 'components/Blur'
+import { Link } from 'react-router-dom'
+import { PATHS } from 'configs/path'
 
 const IMAGE = 'http://localhost:3000/avatar.png'
 const IMAGE_HASH = 'UEHxmSRip3t8~FWBROn%BZsVTLW,=}kWw^oN'
@@ -47,6 +49,7 @@ export default class HomePage extends Component {
   render() {
     return (
       <div id='render'>
+        <Link to={PATHS['dev__blur']}>获取图片哈希</Link>
         <BlurImage hash={IMAGE_HASH} className='w-64 h-48' />
       </div>
     )

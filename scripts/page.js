@@ -15,8 +15,8 @@ const tsxTempl = (pageName = '自动生成的页面') => `import { Fragment, Pur
 import { Helmet } from 'react-helmet'
 
 /**
-* ${pageName}
-*/
+ * ${pageName}
+ */
 export default class Index extends PureComponent {
   render() {
     return (

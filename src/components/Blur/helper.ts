@@ -27,13 +27,23 @@ export const getImageData = (image: HTMLImageElement) => {
 
 /**
  * 获取图片模糊哈希
+ * @param src 
  */
-export const getBlurhash = async (src: string) => {
-  const image = await loadImage(src)
+export const getBlurhash = async (src: string | HTMLImageElement) => {
+  let image: HTMLImageElement
+
+  if (typeof src === 'string') {
+    image = await loadImage(src)
+  } else {
+    image = src
+  }
+
   const imageData = getImageData(image)
 
   if (imageData) {
     const res = encode(imageData.data, imageData.width, imageData.height, 4, 4)
-    console.log(res)
+    return res
+  } else {
+    return undefined
   }
 }
