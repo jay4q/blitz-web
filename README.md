@@ -6,7 +6,18 @@
 
 1. 拷贝 `.env.example` 为 `.env.development.local` 和 `.env.production.local`
 2. 根据注释说明填写环境变量
-3. （强烈建议部署在子路径）如果需要部署在子路径，务必使用 `homepage` ，具体可以 [参考](https://create-react-app.dev/docs/deployment/#building-for-relative-paths)
+3. 要求部署在 cloudbase 静态托管的子路径下，需要根据产线服务域名和路径编辑 `./package.json` 下的 `homepage` ，具体可以 [参考](https://create-react-app.dev/docs/deployment/#building-for-relative-paths)
+
+### 常用流程脚本
+
+``` bash
+# 开发
+yarn dev
+# 本地打包并验证
+yarn build && yarn serve
+# 部署至 cloudbase
+yarn deploy
+```
 
 ## 注意事项
 

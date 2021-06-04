@@ -2,6 +2,7 @@
   "name": "blitz-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://spa.logix.top/blitz-web/",
   "dependencies": {
     "@craco/craco": "^6.1.2",
     "ahooks": "^2.10.2",
