@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { PATHS } from 'configs/path'
 import { Image } from 'components/Image'
 
-const IMAGE = 'http://localhost:3000/avatar.png'
+const IMAGE = 'http://192.168.2.29:3000/avatar.png'
 const IMAGE_HASH = 'UEHxmSRip3t8~FWBROn%BZsVTLW,=}kWw^oN'
 
 // class Demo extends Scene {
