@@ -1855,6 +1855,11 @@
   dependencies:
     "@babel/types" "^7.3.0"
 
+"@types/body-scroll-lock@^2.6.1":
+  version "2.6.1"
+  resolved "https://registry.nlark.com/@types/body-scroll-lock/download/@types/body-scroll-lock-2.6.1.tgz#0dbd2b6ad2f4cfcece7102d6cf8630ce95508ee0"
+  integrity sha1-Db0ratL0z87OcQLWz4YwzpVQjuA=
+
 "@types/eslint@^7.2.6":
   version "7.2.10"
   resolved "https://registry.npm.taobao.org/@types/eslint/download/@types/eslint-7.2.10.tgz?cache=0&sync_timestamp=1618425172489&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40types%2Feslint%2Fdownload%2F%40types%2Feslint-7.2.10.tgz"
@@ -3110,6 +3115,11 @@ body-parser@1.19.0:
     qs "6.7.0"
     raw-body "2.4.0"
     type-is "~1.6.17"
+
+body-scroll-lock@^3.1.5:
+  version "3.1.5"
+  resolved "https://registry.npm.taobao.org/body-scroll-lock/download/body-scroll-lock-3.1.5.tgz#c1392d9217ed2c3e237fee1e910f6cdd80b7aaec"
+  integrity sha1-wTktkhftLD4jf+4ekQ9s3YC3quw=
 
 bonjour@^3.5.0:
   version "3.5.0"

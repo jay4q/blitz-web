@@ -19,6 +19,10 @@ yarn build && yarn serve
 yarn deploy
 ```
 
+## Todo
+
++ [ ] 路由懒加载时的占位UI
+
 ## 注意事项
 
 + 因为单入口且使用静态文件托管，因此必须使用 **哈希路由**
