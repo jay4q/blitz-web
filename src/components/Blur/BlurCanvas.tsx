@@ -55,7 +55,9 @@ export class BlurCanvas extends PureComponent<Props> {
     this.draw()
   }
 
-  componentDidUpdate() {
-    this.draw()
+  componentDidUpdate(prevProps: Props) {
+    if (prevProps.hash !== this.props.hash) {
+      this.draw() 
+    }
   }
 }
