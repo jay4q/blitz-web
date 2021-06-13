@@ -11,11 +11,3 @@ body {
 #root {
   @apply w-full h-screen max-h-screen;
 }
-
-#nprogress .bar {
-  background-color: theme("colors.black");
-}
-
-#nprogress .peg {
-  box-shadow: 0 0 10px theme("colors.black"), 0 0 5px theme("colors.black");
-}

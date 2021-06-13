@@ -1,9 +1,8 @@
-import { FunctionComponent, Suspense, useEffect, lazy } from 'react'
+import { FunctionComponent, Suspense, lazy } from 'react'
 import { Router, Route, Switch, Redirect } from 'react-router-dom'
 import { history } from 'utils/history'
 import HomePage from './home'
 import { PATHS } from 'configs/path'
-import NProgress from 'nprogress'
 
 const __ROUTE__ = [
   { path: PATHS.home, comp: HomePage },  // 首页不需要懒加载
@@ -12,13 +11,8 @@ const __ROUTE__ = [
 ]
 
 const Loading = () => {
-  useEffect(() => {
-    NProgress.start()
-    return () => {
-      NProgress.done()
-    }
-  }, [])
-  return null
+  // todo: 可以改一个好看的样式
+  return <p>加载中...</p>
 }
 
 export const App: FunctionComponent = () => {
