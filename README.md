@@ -5,8 +5,10 @@
 ## 步骤
 
 1. 拷贝 `.env.example` 为 `.env.development.local` 和 `.env.production.local`
+   1. 同时记得删除 `.gitignore` 里面对应的 `.env.production.local` 目的是避免交给他人维护时未知产线环境
 2. 根据注释说明填写环境变量
 3. 要求部署在 cloudbase 静态托管的子路径下，需要根据产线服务域名和路径编辑 `./package.json` 下的 `homepage` ，具体可以 [参考](https://create-react-app.dev/docs/deployment/#building-for-relative-paths)
+4. 根据当前项目要求，给 `README.md` 添加一些重要的项目说明
 
 ### 常用流程脚本
 
